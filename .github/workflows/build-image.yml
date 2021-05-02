@@ -38,3 +38,7 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+      - services:
+          ogp-getter:
+            image: ubuntu-latest
+            ports:4040:4040
