@@ -2,9 +2,9 @@ name: Hugo Website Build Test CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ gh-actions ]
   pull_request:
-    branches: [ main ]
+    branches: [ gh-actions ]
 
 jobs:
   buildtest:
