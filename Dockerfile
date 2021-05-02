@@ -22,4 +22,4 @@ COPY --from=build-env /app /app
 WORKDIR /app
 # RUN npm run start&
 
-CMD ["hugo"]
+CMD ["npm run start"]
