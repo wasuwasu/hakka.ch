@@ -41,4 +41,4 @@ jobs:
       - services:
           ogp-getter:
             image: ubuntu-latest
-            ports:4040:4040
+            ports: 4040:4040
