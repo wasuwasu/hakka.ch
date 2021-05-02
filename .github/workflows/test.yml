@@ -3,9 +3,9 @@ name: Hugo Website Build Test CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ add-github-actions ]
   pull_request:
-    branches: [ main ]
+    branches: [ add-github-actions ]
 
 jobs:
   buildtest:
