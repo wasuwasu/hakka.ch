@@ -35,7 +35,7 @@ jobs:
       - name: Hugo Website Build
         run: hugo --minify --config config.test.toml
         env:
-          HUGO_CACHEDIR: ~/cache/hug
+          HUGO_CACHEDIR: :resourceDir/hugo
 # name: Build Container Image
 
 # on:
