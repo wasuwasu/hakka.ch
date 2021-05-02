@@ -40,7 +40,7 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
     services:
         ogp-getter:
-          image: ghcr.io/${{ github.repository }}
+          image: latest
           ports: 
             - 4040:4040
 
