@@ -1,10 +1,10 @@
-
 [[cloth]]
 name = "ぶかぶかニット"
 author = "mio3io"
 url = "https://booth.pm/ja/items/2309065"
 style = "casual knit"
 vrc_new_item = "2020-08-19"
+category =["cloth","nail"]
 
 [[cloth]]
 name = "お花とフリルの水着セット"
@@ -1134,3 +1134,4 @@ author = "ふぃーねちゃんのあれこれ"
 boothPrefix = "3dfactorydayo"
 url = "https://booth.pm/ja/items/2961244"
 release = "2021-05-12"
+category =["cloth","nail"]

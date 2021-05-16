@@ -45,7 +45,11 @@
             {{- else if .twitter_first_post -}}
               {{- $date = .twitter_first_post -}}
             {{- end -}}
-            <li class="clothet__item" data-category="{{ $key }}" data-key="{{ $key }} {{ .name }} {{ .author }} {{ .style }}" data-release="{{ $date }}" data-name="{{ .name }}" data-author="{{ .author }}">
+            {{- if .category}}
+              <li class="clothet__item" data-category="{{ $key }}" data-key="{{ $key }} {{ .name }} {{ .author }} {{ .style }}" data-categories= "{{ delimit .category ',' }}" data-release="{{ $date }}" data-name="{{ .name }}" data-author="{{ .author }}">
+            {{- else}}
+              <li class="clothet__item" data-category="{{ $key }}" data-key="{{ $key }} {{ .name }} {{ .author }} {{ .style }}" data-categories= "{{ $key }}" data-release="{{ $date }}" data-name="{{ .name }}" data-author="{{ .author }}">
+            {{- end -}}
               <div class="item__image">
                 {{- if $ogpimage -}}
                   <div style="background-image: url({{ ($ogpimage.Resize "150x").RelPermalink }});" loading="lazy"></div>
